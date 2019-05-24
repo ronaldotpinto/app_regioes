@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Regioes</string>
+
+    <string-array name="regiao">
+        <item>Sul</item>
+        <item>Sudeste</item>
+        <item>Centro Oeste</item>
+        <item>Nordeste</item>
+        <item>Norte</item>
+    </string-array>
+
+    <string-array name="sul">
+        <item>Paraná</item>
+        <item>Rio Grande do Sul</item>
+        <item>Santa Catarina</item>
+    </string-array>
+
+    <string-array name="sudeste">
+        <item>Espirito Santo</item>
+        <item>Minas Gerais</item>
+        <item>Rio de Janeiro</item>
+        <item>São Paulo</item>
+    </string-array>
+
+    <string-array name="centro_oeste">
+        <item>Goiás</item>
+        <item>Mato Grosso</item>
+        <item>Mato Grosso do Sul</item>
+    </string-array>
+
+    <string-array name="nordeste">
+        <item>Alagoas</item>
+        <item>Bahia</item>
+        <item>Ceará</item>
+        <item>Maranhão</item>
+        <item>Paraíba</item>
+        <item>Pernambuco</item>
+        <item>Piauí</item>
+        <item>Rio Grande do Norte</item>
+        <item>Sergipe</item>
+    </string-array>
+
+    <string-array name="norte">
+        <item>Acre</item>
+        <item>Amapá</item>
+        <item>Amazonas</item>
+        <item>Pará</item>
+        <item>Rondônia</item>
+        <item>Roraima</item>
+        <item>Tocantins</item>
+    </string-array>
+
+</resources>

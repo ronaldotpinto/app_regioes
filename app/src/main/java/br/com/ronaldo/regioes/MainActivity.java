@@ -7,7 +7,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private ConstraintLayout layout;
+    private ConstraintLayout layout;it
     private TextView tvRegiao;
     private TextView tvEstado;
     private String[] regiao , sul , sudeste , centro_oeste , nordeste , norte;
@@ -39,15 +39,29 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSwipeTop() {
                 super.onSwipeTop();
+
+                if(contRegiao == 0){
+                    contRegiao = regiao.length;
+                }else{
+                    contRegiao--;
+                }
+
                 tvRegiao.setText(regiao[contRegiao]);
-                contRegiao++;
+                atualizaEstadoRegiao();
             }
 
             @Override
             public void onSwipeBottom() {
                 super.onSwipeBottom();
+
+                if(contRegiao == 0){
+                    contRegiao = regiao.length;
+                }else{
+                    contRegiao++;
+                }
+
                 tvRegiao.setText(regiao[contRegiao]);
-                contRegiao--;
+                atualizaEstadoRegiao();
             }
 
             @Override
@@ -132,6 +146,32 @@ public class MainActivity extends AppCompatActivity {
                         break;
                 }
                 contEstado--;
+            }
+
+            public void atualizaEstadoRegiao()
+            {
+                contEstado = 0;
+                switch (regiao[contRegiao]){
+                    case "Norte":
+                        tvEstado.setText(norte[contEstado]);
+                        break;
+
+                    case "Nordeste":
+                        tvEstado.setText(nordeste[contEstado]);
+                        break;
+
+                    case "Centro-Oeste":
+                        tvEstado.setText(centro_oeste[contEstado]);
+                        break;
+
+                    case "Sudeste":
+                        tvEstado.setText(sudeste[contEstado]);
+                        break;
+
+                    case "Sul":
+                        tvEstado.setText(sul[contEstado]);
+                        break;
+                }
             }
         });
 

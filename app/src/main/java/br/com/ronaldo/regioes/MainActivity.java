@@ -7,7 +7,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private ConstraintLayout layout;it
+    private ConstraintLayout layout;
     private TextView tvRegiao;
     private TextView tvEstado;
     private String[] regiao , sul , sudeste , centro_oeste , nordeste , norte;
